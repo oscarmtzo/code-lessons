@@ -21,9 +21,11 @@ module.exports = app => {
     session({
       // in the network tab, we will be able to see the cookie - this secret is getting hashed inside that cookie
       secret: process.env.SESS_SECRET,
-      resave: false,
-      saveUninitialized: true,
+      resave: true,
+      saveUninitialized: false,
       cookie: {
+        sameSite: 'none',
+        httpOnly: true,
         maxAge: 60000 // 60 * 1000 ms === 1 min
       },
       store: new MongoStore({
