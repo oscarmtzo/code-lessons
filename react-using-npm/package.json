@@ -1,0 +1,11 @@
+{
+  "name": "react-using-npm",
+  "version": "1.0.0",
+  "description": "use of npm to install react dependencies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
